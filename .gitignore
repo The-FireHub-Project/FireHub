@@ -1,0 +1,10 @@
+# JetBrains
+.idea/
+
+# FireHub
+firehub/*
+!firehub/.gitkeep
+!firehub/core/
+
+firehub/core/*
+!firehub/core/.gitkeep

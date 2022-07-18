@@ -1,0 +1,34 @@
+<IfModule mod_rewrite.c>
+
+    #
+    # .htaccess configuration file
+    #
+    # Hypertext Access file is a directory-level plain text configuration file for web servers.
+    # @since 0.1.2.pre-alpha
+    #
+    # @author Danijel Galić
+    # @copyright 2022 FireHub Web Application Framework
+    # @license OSL Open Source License version 3 - [https://opensource.org/licenses/OSL-3.0](https://opensource.org/licenses/OSL-3.0)
+    #
+    # @package App\Web
+    # @version 1.0
+    #
+
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    DirectoryIndex index.php
+
+    RewriteEngine On
+
+    # Add HTTP_AUTHORIZATION header
+    RewriteCond %{HTTP:Authorization} .+
+    RewriteRule ^ - [E=HTTP_AUTHORIZATION:%0]
+
+    # Rewrite files and folders on index.php
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+</IfModule>

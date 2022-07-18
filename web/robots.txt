@@ -1,0 +1,17 @@
+#
+# robots.txt instruction file
+#
+# Robots.txt is a text file webmasters create to instruct web robots (typically search engine robots)
+# how to crawl pages on their website.
+# @since 0.1.2.pre-alpha
+#
+# @author Danijel Galić
+# @copyright 2022 FireHub Web Application Framework
+# @license OSL Open Source License version 3 - [https://opensource.org/licenses/OSL-3.0](https://opensource.org/licenses/OSL-3.0)
+#
+# @package App\Web
+# @version 1.0
+#
+
+User-agent: *
+Disallow:

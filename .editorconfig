@@ -1,0 +1,17 @@
+# top-level folder
+root = true
+
+[*]
+charset = utf-8 # default charset
+
+# no new line at end of file
+end_of_line = lf
+insert_final_newline = false
+
+# 4 space intent
+indent_style = space
+indent_size = 4
+
+# 2 intent size per file type
+[*.{yml,yaml, config}]
+indent_size = 2

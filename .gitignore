@@ -8,3 +8,9 @@ firehub/*
 
 firehub/core/*
 !firehub/core/.gitkeep
+
+# App
+vendor/phpdocumentor.phar
+vendor/phpstan.phar
+vendor/phpstan.neon
+vendor/phpunit.phar

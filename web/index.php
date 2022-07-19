@@ -19,3 +19,12 @@
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
+
+use FireHub\FireHub;
+
+/**
+ * Let there be light
+ */
+require 'phar://'.__DIR__.'/../firehub/core/firehub.phar/firehub.FireHub.php';
+
+$firehub = (new FireHub())->boot();

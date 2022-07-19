@@ -11,7 +11,9 @@
  * @license OSL Open Source License version 3 - [https://opensource.org/licenses/OSL-3.0](https://opensource.org/licenses/OSL-3.0)
  *
  * @package App\Web
+ *
  * @version 1.0
+ * @version 1.1 Added main FireHub class for bootstrapping.
  *
  * @todo Remove ini settings after logger provider is implemented.
  */
